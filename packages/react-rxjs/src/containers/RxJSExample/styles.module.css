@@ -1,0 +1,19 @@
+.RxJSExample-root {
+  min-height: 100vh;
+}
+
+.RxJSExample-root>h4 {
+  padding-top: 24px;
+}
+
+.RxJSExample-container {
+  display: flex;
+  margin: 0 16px;
+  padding: 16px 24px;
+  height: 50vh;
+  border: 1px solid black;
+}
+
+.RxJSExample-container>div {
+  flex-basis: 50%;
+}
