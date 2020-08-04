@@ -11,9 +11,7 @@ const subject = new BehaviorSubject<State>(initialState);
 const store = {
   init: () => subject.next(state),
   subscribe: (subscriber: Subscriber<State>) =>
-    subject.subscribe({
-      next: (state: State) => subscriber(state),
-    }),
+    subject.subscribe((state: State) => subscriber(state)),
   sendMessage: (message: string) => {
     state = {
       ...state,
